@@ -11,6 +11,7 @@ width = 800
 textIn = 0
 textOut = 0
 
+
 def testIntersectionIn(x, y):
     res = -450 * x + 400 * y + 157500
     if ((res >= -550) and (res < 550)):
@@ -27,9 +28,11 @@ def testIntersectionOut(x, y):
 
     return False
 
+video_capture = cv2.VideoCapture(1)
 
 if __name__ == "__main__":
-    camera = cv2.VideoCapture("test2.mp4")
+    #camera = cv2.VideoCapture("test2.mp4")
+    camera = video_capture
 
     firstFrame = None
 

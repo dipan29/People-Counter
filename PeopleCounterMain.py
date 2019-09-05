@@ -6,7 +6,7 @@ import cv2
 import numpy as np
 
 
-width = 800
+width = 720
 
 textIn = 0
 textOut = 0
@@ -101,7 +101,7 @@ if __name__ == "__main__":
         cv2.putText(frame, "In: {}".format(str(textIn)), (10, 50),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
         cv2.putText(frame, "Out: {}".format(str(textOut)), (10, 70),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
         cv2.putText(frame, datetime.datetime.now().strftime("%A %d %B %Y %I:%M:%S%p"),
                     (10, frame.shape[0] - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 0, 255), 1)
         cv2.imshow("Security Feed", frame)
